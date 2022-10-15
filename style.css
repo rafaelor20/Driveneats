@@ -81,7 +81,15 @@ body{
     margin-right: 15px;
 }
 
-.caixa-borda-verde{
+.caixa-borda-verde-pf{
+    border: 5px solid #32B72F;
+}
+
+.caixa-borda-verde-bebida{
+    border: 5px solid #32B72F;
+}
+
+.caixa-borda-verde-sobremesa{
     border: 5px solid #32B72F;
 }
 
@@ -156,7 +164,7 @@ body{
     flex-direction: row-reverse;
 }
 
-.caixa-prato-principal{
+.caixa-prato-feito{
     height: 216px;
 }
 
@@ -189,6 +197,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 .fonte-texto-baixo{
@@ -201,4 +211,8 @@ body{
     letter-spacing: 0.018em;
     color: #FFFFFF;
     text-align: center;
+}
+
+.caixa-texto-baixo-verde{
+    background-color: #32B72F;
 }

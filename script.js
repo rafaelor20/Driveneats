@@ -133,10 +133,10 @@ function fecharPedido(){
         precoFinal = precoFinal.replace(".",",");
 
         let textoFecharPedido = 
-        `Olá, gostaria de fazer o pedido:\n
-        - Prato: ${nomePf}\n
-        - Bebida: ${nomeBebida}\n
-        - Sobremesa: ${nomeSobremesa}\n
+        `Olá, gostaria de fazer o pedido:
+        - Prato: ${nomePf}
+        - Bebida: ${nomeBebida}
+        - Sobremesa: ${nomeSobremesa}
         Total: R$ ${precoFinal}`;
         
         const phoneNum = "5579981096799";

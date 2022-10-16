@@ -116,7 +116,6 @@ function precoToNumber(str){
     return numero;
 }
 
-
 function fecharPedido(){
     if (tresSelecionados()){
         let pf = document.querySelector(".caixa-borda-verde-pf");
@@ -128,18 +127,22 @@ function fecharPedido(){
         let sobremesa = document.querySelector(".caixa-borda-verde-sobremesa");
         let nomeSobremesa = sobremesa.querySelector(".titulo-comida").innerHTML;
         let precoSobremesa = sobremesa.querySelector(".fonte-preco").innerHTML;
-        let total = precoToNumber(precoPf) + precoToNumber(precoBebida) + precoToNumber(precoSobremesa);
-        total = total.toFixed(2);
+        let precoTotal = precoToNumber(precoPf) + precoToNumber(precoBebida) + precoToNumber(precoSobremesa);
+        precoTotal = precoTotal.toFixed(2);
+        let precoFinal = precoTotal.toString();
+        precoFinal = precoFinal.replace(".",",");
 
         let textoFecharPedido = 
         `Olá, gostaria de fazer o pedido:\n
         - Prato: ${nomePf}\n
         - Bebida: ${nomeBebida}\n
         - Sobremesa: ${nomeSobremesa}\n
-        Total: R$ ${total}`;
+        Total: R$ ${precoFinal}`;
         
+        const phoneNum = "5579981096799";
+
         let textoFecharPedidoEncoded = encodeURIComponent(textoFecharPedido);
-        const linkWhatsapp = `https://wa.me/?text=${textoFecharPedidoEncoded}`;
+        const linkWhatsapp = `https://wa.me/${phoneNum}?text=${textoFecharPedidoEncoded}`;
         window.open(linkWhatsapp);
 
     }

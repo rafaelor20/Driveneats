@@ -1,4 +1,4 @@
-Driven Eats:
+## Driven Eats:
 
 Driven Eats é uma aplicação web simples para um serviço de entrega de comida. A aplicação permite aos usuários selecionar uma refeição, uma bebida e uma sobremesa de uma lista de opções. Uma vez que todos os três itens tenham sido selecionados, o usuário pode fazer um pedido através do whatsapp.
 
